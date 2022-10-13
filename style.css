@@ -1,0 +1,250 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #44c3e7;
+  --color-dark-blue: #3790cc;
+
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size--border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 800ms;
+}
+
+.navbar {
+  background: transparent;
+  transition: all var(--animation-duration);
+}
+
+/* .navbar-item.is-active {
+  border: 1px solid black;
+  border-radius: var(--size--border-radius);
+} */
+
+.navbar-item:hover {
+  border: 1px solid white;
+  border-radius: var(--size--border-radius);
+  background-color: var(--color-dark-white);
+  cursor: pointer;
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.section {
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+}
+
+#home {
+  background: url("/assets/homeBackground15.png") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+#about {
+  background: url("/assets/homeBackground14.jpg") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+#skills {
+  background: url("/assets/homeBackground9.png") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+#work {
+  background: url("/assets/homeBackground16.png") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+#category__btn {
+  border-radius: 10px;
+  padding: 8px 48px;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 90px;
+  margin: auto;
+  border: 1px solid var(--color-dark-grey);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon:hover {
+  color: var(--color-orange);
+  transform: rotate(30deg) scale(1.1);
+}
+
+.major__icon i {
+  transition: all 500ms ease;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__logo {
+  margin: 10px 0;
+  max-width: 100px;
+  max-height: 100px;
+
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  margin: 20px 0;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 250px;
+  margin: 2px;
+  background-color: var(--color-light-white);
+}
+
+.project__description {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.project:hover .project__description {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project__description h3:after {
+  content: '';
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  margin-left: -12px;
+  margin-top: 8px;
+  background-color: var(--color-dark-white);
+}
+
+.category__count {
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: 4px;
+  opacity: 0;
+  transition: all var(--animation-duration);
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-in;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.arrow-up.visible {
+  opacity: 0.8;
+  pointer-events: auto;
+}

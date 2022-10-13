@@ -1,0 +1,331 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jiwon's Portfolio</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <script
+      src="https://kit.fontawesome.com/3cb806fd1b.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-fixed-top" id="navbar">
+    <div class="navbar-brand">
+      <img src="assets/logo.png" alt="site-logo" style="max-height: 75px" class="py-1 px-1">
+
+      <a class="navbar-burger has-text-white" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+  
+    <div class="navbar-menu has-text-weight-bold is-size-5" id="nav-links">
+      <ul class="navbar-end">
+        <li class="navbar-item is-family-code has-text-white" id="homeBtn" data-link="#home">Home</li>
+        <li class="navbar-item is-family-code has-text-white" id="aboutBtn" data-link="#about">About</li>
+        <li class="navbar-item is-family-code has-text-white" id="skillsBtn" data-link="#skills">Skills</li>
+        <li class="navbar-item is-family-code has-text-white" id="workBtn" data-link="#work">My Work</li>
+        <li class="navbar-item is-family-code has-text-white" id="contactBtn" data-link="#contact">Contact</li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Home -->
+  <section id="home">
+    <section class="section">
+    
+      <div class="content is-medium">
+        <div class="is-flex is-horizontal-center">
+          <figure class="image is-128x128">
+              <img class="is-rounded" src="assets/jiwon_shim.png" alt="profile photo">
+          </figure>
+        </div>
+        
+        <h1 class="has-text-white is-size-1 is-family-code">
+          Hello, <br />
+          I'm Jiwon Shim
+        </h1>
+        <h2 class="has-text-white is-size-4 is-family-code">
+          I am a software engineer.
+        </h2>
+        <div class="block">
+          <button id="contactMe" class="button is-dark is-rounded has-text-white is-size-6 has-text-weight-bold is-family-code mt-5" data-link="#contact">Contact Me</button>
+        </div>    
+      </div>
+    </section>
+  </section>
+  
+  <!-- About -->
+  <section id="about">
+    <section class="section has-text-black has-text-centered">
+      <h1 class="is-size-1 is-family-code has-text-weight-bold py-4">
+        About Me
+      </h1>
+      <p class="is-size-5 is-family-monospace py-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae enim culpa impedit reiciendis 
+        sapiente non, officiis suscipit ducimus dignissimos delectus eligendi deserunt facere corrupti aliquam. 
+        Reiciendis esse beatae vero.
+        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus architecto nobis, minima 
+        amet aliquam voluptates fugiat tenetur modi autem minus quibusdam maiores ipsum! Doloremque cupiditate illum 
+        necessitatibus at inventore?
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon has-text-centered">
+            <i class="fa-brands fa-angular"></i>
+          </div>
+          <h2 class="major__title has-text-weight-bold">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript,
+            <br> Angular
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon has-text-centered">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <h2 class="major__title has-text-weight-bold">Back-end</h2>
+          <div class="major__description">
+            Java, Spring Framework
+          </div>
+        </div>
+      </div>
+  
+      <div class="about__jobs is-family-monospace has-text-black">
+        <div class="job">
+          <img 
+            src="assets/jobs/cognizant_logo.png" 
+            alt="cognizant logo" 
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">Cognizant</p>
+            <p class="job__period">2021 May.Until now</p>
+          </div>        
+        </div>
+  
+        <div class="job">
+          <img 
+            src="assets/jobs/revature_logo.gif" 
+            alt="revature logo" 
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">Revature</p>
+            <p class="job__period">2021 Feb.Until now</p>
+          </div>        
+        </div>
+      </div>
+  
+    </section>
+  </section>
+  
+  <!-- Skills -->
+  <section id="skills">
+    <section class="section has-text-centered has-text-white is-family-code">
+      <h1 class="has-text-weight-bold is-size-1">Skills</h1>
+      <h2 class="has-text-centered is-size-3 py-3">Skills & Attributes</h2>
+      <p class="has-text-centered is-size-5 py-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam voluptatum alias quisquam, unde eveniet qui optio, ut accusamus, laboriosam deleniti tempora natus ipsam ipsa. Repellendus dignissimos deleniti quibusdam accusamus!
+        <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eaque laudantium culpa ullam blanditiis nobis quasi reiciendis exercitationem id sint tempora architecto ad, consequatur fuga! Possimus commodi eaque labore? Voluptatum.
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title is-size-4">Skills</h3>
+          <div class="skill">
+  
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>99%</span>
+            </div>
+            <progress class="progress is-primary" value="99" max="100"></progress>
+  
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <progress class="progress is-primary" value="90" max="100"></progress>
+  
+            <div class="skill__description">
+              <span>Java</span>
+              <span>80%</span>
+            </div>
+            <progress class="progress is-primary" value="80" max="100"></progress>
+  
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+            <progress class="progress is-primary" value="75" max="100"></progress>
+  
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title is-size-4">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>IntelliJ</span></li>
+              <li><span>Spring Framework</span></li> 
+              <li><span>Angular</span></li> 
+              <li><span>GCP</span></li>         
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title is-size-4">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Scrum</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+  <!-- Work -->
+  <section id="work">
+    <section class="section has-text-black is-family-code has-text-centered">
+      <h1 class="has-text-weight-bold is-size-1">My Work</h1>
+      <h3 class="is-size-3">Projects</h3>
+  
+      <div class="is-one-third is-offset-one-quarter pt-6">
+        <button class="button has-text-weight-bold" id="category__btn">
+          All<span class="category__count">8</span>
+        </button>
+        <button class="button has-text-weight-bold" id="category__btn">
+          Front-end<span class="category__count">4</span>
+        </button>
+        <button class="button has-text-weight-bold" id="category__btn">
+          Back-end<span class="category__count">4</span>
+        </button>
+      </div>
+  
+      <div class="work__projects pt-6">
+        <a 
+          href="https://github.com/jshim0209/e-commerce-frontend-angular" 
+          class="project"
+          target="blank"
+        >
+          <figure class="image container">
+            <img src="/assets/project.png" alt="project image">
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </figure>
+        </a>
+  
+        <a 
+          href="https://github.com/jshim0209/e-commerce-frontend-angular" 
+          class="project"
+          target="blank"
+        >
+          <figure class="image container">
+            <img src="/assets/project.png" alt="project image">
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </figure>
+        </a>
+  
+        <a 
+          href="https://github.com/jshim0209/e-commerce-frontend-angular" 
+          class="project"
+          target="blank"
+        >
+          <figure class="image container">
+            <img src="/assets/project.png" alt="project image">
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </figure>
+        </a>
+  
+        <a 
+          href="https://github.com/jshim0209/e-commerce-frontend-angular" 
+          class="project"
+          target="blank"
+        >
+          <figure class="image container">
+            <img src="/assets/project.png" alt="project image">
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </figure>
+        </a>
+  
+        <a 
+          href="https://github.com/jshim0209/e-commerce-frontend-angular" 
+          class="project"
+          target="blank"
+        >
+          <figure class="image container">
+            <img src="/assets/project.png" alt="project image">
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </figure>
+        </a>
+  
+        <a 
+          href="https://github.com/jshim0209/e-commerce-frontend-angular" 
+          class="project"
+          target="blank"
+        >
+          <figure class="image container">
+            <img src="/assets/project.png" alt="project image">
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </figure>
+        </a>
+      </div>
+    </section>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact">
+    <footer class="footer">
+      <div class="content has-text-centered is-size-5 is-family-code">
+          <h1 class="contact__title">Let's talk</h1>
+          <h2 class="contact__email">jshim0209@hotmail.com</h2>
+          <div class="contact__links">
+              <a href="https://github.com/jshim0209/">
+              <i class="fa-brands fa-github fa-2x"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/jiwon-shim-7b37ab143/">
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+          </div>
+          <p class="contact__rights">2022 Jiwon Shim - All rights reserved</p>
+      </div>      
+  </footer>
+  </section>
+  
+  <!-- Arrow Up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- <button class="button is-medium is-responsive">
+    Medium
+  </button> -->
+
+</body>
+<script src="index.js"></script>
+</html>
