@@ -228,12 +228,12 @@
   transition: all var(--animation-duration);
 }
 
-.arrow-up {
+#arrow-up {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   font-size: 30px;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -244,7 +244,7 @@
   cursor: pointer;
 }
 
-.arrow-up.visible {
+#arrow-up.visible {
   opacity: 0.8;
   pointer-events: auto;
 }

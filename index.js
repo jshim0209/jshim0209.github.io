@@ -58,7 +58,7 @@ document.addEventListener("scroll", () => {
 });
 
 // Show "Arrow Up" button when scrolling  down
-const arrowUp = document.querySelector(".arrow-up");
+const arrowUp = document.querySelector("#arrow-up");
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > homeHeight / 2) {
